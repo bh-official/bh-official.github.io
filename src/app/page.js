@@ -28,12 +28,17 @@ export default function Portfolio() {
     {
       n: "Secure Auth System",
       d: "JWT Authentication Backend Project",
-      l: "https://fullstack-secure-auth-system-client.onrender.com/",
+      l: "https://fullstack-community-events-hub-client.onrender.com/",
     },
     {
       n: "Guestbook App",
       d: "CRUD Guestbook with Likes & Validation",
       l: "https://full-stack-project-guest-book-client.onrender.com",
+    },
+    {
+      n: "Accessible Image Gallery",
+      d: "Responsive React gallery with search, accessibility & Unsplash API",
+      l: "https://accessible-gallery-react-icec.onrender.com/",
     },
   ];
   const skills = [
