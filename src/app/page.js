@@ -1,65 +1,86 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function Portfolio() {
+  const projects = [
+    { n: "CareerCraft", d: "AI Job Application Platform", l: "#" },
+    { n: "Meridian", d: "Global Appointments Tracker", l: "#" },
+    { n: "BookVerse", d: "Book Review Social Platform", l: "#" },
+    { n: "TechThreads", d: "Developer Discussion Forum", l: "#" },
+  ];
+  const skills = [
+    "React",
+    "Next.js",
+    "Node.js",
+    "PostgreSQL",
+    "JavaScript",
+    "Tailwind CSS",
+  ];
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 text-white font-sans scroll-smooth">
+      <section className="px-8 md:px-20 py-24">
+        <p className="text-emerald-400 font-semibold tracking-widest uppercase">
+          Open to Opportunities
+        </p>
+        <h1 className="text-5xl md:text-7xl font-bold mt-3 leading-tight">
+          Bhuvaneswari Babu
+        </h1>
+        <p className="mt-4 text-2xl text-slate-200">Full Stack Developer</p>
+        <p className="mt-6 max-w-2xl text-slate-300">
+          I create secure, scalable and user-focused digital products with
+          modern frontend experiences and reliable backend systems.
+        </p>
+        <div className="mt-8 flex gap-4 flex-wrap">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#projects"
+            className="px-5 py-3 rounded-2xl bg-emerald-500 text-black font-semibold"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            View Projects
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+          <a href="/" className="px-5 py-3 rounded-2xl border border-white/20">
+            Download Resume
           </a>
         </div>
-      </main>
+      </section>
+      <section className="px-8 md:px-20 pb-16">
+        <h2 className="text-3xl font-semibold mb-6">Skills</h2>
+        <div className="flex flex-wrap gap-3">
+          {skills.map((s, i) => (
+            <span
+              key={i}
+              className="px-4 py-2 rounded-full bg-white/10 border border-white/10"
+            >
+              {s}
+            </span>
+          ))}
+        </div>
+      </section>
+      <section id="projects" className="px-8 md:px-20 pb-16">
+        <h2 className="text-3xl font-semibold mb-6">Featured Projects</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          {projects.map((p, i) => (
+            <a
+              href={p.l}
+              key={i}
+              className="rounded-3xl bg-white/5 border border-white/10 p-6 backdrop-blur hover:bg-white/10 transition"
+            >
+              <h3 className="text-2xl font-bold">{p.n}</h3>
+              <p className="mt-2 text-slate-300">{p.d}</p>
+              <span className="mt-4 inline-block text-emerald-400">
+                View Project →
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+      <section className="px-8 md:px-20 pb-24">
+        <h2 className="text-3xl font-semibold mb-4">Contact</h2>
+        <p className="text-slate-300">info.bhuvaneswari@gmail.com</p>
+        <p className="text-slate-300">
+          LinkedIn: linkedin.com/in/bhuvaneswari-babu-60b8772b6
+        </p>
+        <p className="text-slate-500 mt-6">
+          Available for junior developer opportunities.
+        </p>
+        <p className="text-slate-600 mt-2">© 2026 Bhuvaneswari Babu</p>
+      </section>
     </div>
   );
 }
