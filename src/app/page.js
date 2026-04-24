@@ -86,7 +86,7 @@ export default function Portfolio() {
 
         <p className="mt-4 text-2xl text-slate-200">Full Stack Developer</p>
 
-        <p className="mt-6 max-w-2xl text-slate-300">
+        <p className="mt-6 text-slate-300 whitespace-nowrap">
           I create secure, scalable and user-focused digital products with
           modern frontend experiences and reliable backend systems.
         </p>
@@ -170,7 +170,7 @@ export default function Portfolio() {
         </p>
 
         <p className="text-slate-500 mt-6">
-          Available for junior developer opportunities.
+          Available for Software Developer opportunities.
         </p>
 
         <p className="text-slate-600 mt-2">© 2026 Bhuvaneswari Babu</p>
