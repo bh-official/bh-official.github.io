@@ -1,9 +1,40 @@
 export default function Portfolio() {
   const projects = [
-    { n: "CareerCraft", d: "AI Job Application Platform", l: "#" },
-    { n: "Meridian", d: "Global Appointments Tracker", l: "#" },
-    { n: "BookVerse", d: "Book Review Social Platform", l: "#" },
-    { n: "TechThreads", d: "Developer Discussion Forum", l: "#" },
+    {
+      n: "CareerCraft",
+      d: "AI Job Application Platform",
+      l: "https://career-craftt.vercel.app/",
+    },
+    {
+      n: "Meridian",
+      d: "Global Appointments Tracker",
+      l: "https://global-appointments-tracker.onrender.com/",
+    },
+    {
+      n: "BookVerse",
+      d: "Book Review Social Platform",
+      l: "https://book-verse-blond.vercel.app/",
+    },
+    {
+      n: "TechThreads",
+      d: "Developer Discussion Forum",
+      l: "https://tech-threads-nu.vercel.app",
+    },
+    {
+      n: "Community Events Hub",
+      d: "Full-Stack Event Management Platform",
+      l: "https://fullstack-community-events-hub-client.onrender.com/",
+    },
+    {
+      n: "Secure Auth System",
+      d: "JWT Authentication Backend Project",
+      l: "https://fullstack-secure-auth-system-client.onrender.com/",
+    },
+    {
+      n: "Guestbook App",
+      d: "CRUD Guestbook with Likes & Validation",
+      l: "https://full-stack-project-guest-book-client.onrender.com",
+    },
   ];
   const skills = [
     "React",
